@@ -99,10 +99,10 @@
 <h3>Другие варианты ответов 500, 400</h3>
 
 
- <h3 align="left">Создать пользователя</h3>
+ <h3 align="left">Создать товар(продукт)</h3>
 
 <p>Метод: POST</p>
-<p>Маршрут: http://[domainname:port]/user </p>
+<p>Маршрут: http://[domainname:port]/product</p>
 <table class="table1" cellpadding="8">
            <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
@@ -127,7 +127,7 @@
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
 		    <tr>
-                <td>1</td> <td>description</td> <td>Описание товара(продукта)</td> 
+                <td>1</td> <td>description</td> <td>Описание товара</td> 
             </tr>
 			 <tr>
                 <td>2</td> <td>price</td> <td>Цена товара</td>
