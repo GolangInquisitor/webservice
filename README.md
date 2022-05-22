@@ -109,4 +109,8 @@
            <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
+			 <tr>
+                <td>1</td> <td>name</td> <td>Имя. </td> 
+            </tr>
+			
 </table>			
