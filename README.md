@@ -64,7 +64,7 @@
         </table>
 <h3>Другие варианты ответов 500, 400</h3>
 
-<h3 align="left">Изменить пользователя</h3>
+<h3 align="left"> Изменить пользователя</h3>
 <p>Метод: PUT</p>
 <p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <table class="table1" cellpadding="8">
@@ -97,7 +97,8 @@
 <p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <h3>Варианты ответов 204, 500, 400</h3> 
 
- <h3> align="left">Создать продукт(товар)</h3>
+ 
+ <h3 align="left">Создать продукт(товар)</h3>
 
 <p>Метод: POST</p>
 <p>Маршрут: http://[domainname:port]/product</p>
@@ -128,25 +129,20 @@
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
 			    <tr>
-                <td>1</td> <td>uuid</td> <td>uuid созданного пользователя </td> 
+                <td>1</td> <td>uuid</td> <td>uuid созданного продукта </td> 
             </tr>
             <tr>
-                <td>2</td> <td>name</td> <td>Имя. </td> 
+                <td>1</td> <td>description</td> <td>Описание (название) продукта</td> 
             </tr>
 			 <tr>
-                <td>3</td> <td>surname</td> <td>Фамилия. </td>
+                <td>2</td> <td>price</td> <td>Цена </td>
             </tr>
 			   <tr>
-                <td>4</td> <td>midlename</td> <td>Отчество. </td>
-            </tr>
-			    <tr>
-                <td>5</td> <td>fio</td> <td>surname+name+middlename</td> 
+                <td>3</td> <td>currency</td> <td>Валюта</td>
             </tr>
 			   <tr>
-                <td>6</td> <td>gender</td> <td>Пол.</td>
-            </tr>
-			   <tr>
-                <td>7</td> <td>age</td> <td>Возраст </td>   
+                <td>4</td> <td>left_in_stock</td> <td>Остаток на складе</td>
+            </tr>  
         </table>
 <h3>Другие варианты ответов 500, 400</h3>
 
