@@ -196,7 +196,7 @@
                  <td>1</td> <td>product</td> <td>JSON массив из uuid продукта</td> 
             </tr>
 			 <tr>
-                 <td>1</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
+                 <td>2</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
             </tr>
 			
 </table>
@@ -208,7 +208,7 @@
 
 <h3 align="left"> Изменить заказ</h3>
 <p>Метод: PUT</p>
-<p>Маршрут: http://[domainname:port]/products/{uuid пользователя} </p>
+<p>Маршрут: http://[domainname:port]/order/{uuid пользователя} </p>
 <table class="table1" cellpadding="8">
            <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
@@ -217,10 +217,10 @@
                  <td>1</td> <td>product</td> <td>JSON массив из uuid продукта</td> 
             </tr>
 			 <tr>
-                 <td>1</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
+                 <td>2</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
             </tr>
 			<tr>
-                 <td>1</td> <td>id</td> <td>Номер заказа пользователя</td>  
+                 <td>3</td> <td>id</td> <td>Номер заказа пользователя</td>  
             </tr>		
 </table>
 <h3>Ответ 200OK</h3>
@@ -233,10 +233,10 @@
                  <td>1</td> <td>product</td> <td>JSON массив из uuid продукта</td> 
             </tr>
 			 <tr>
-                 <td>1</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
+                 <td>2</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
             </tr>
 			<tr>
-                 <td>1</td> <td>id</td> <td>Номер заказа пользователя</td>  
+                 <td>3</td> <td>id</td> <td>Номер заказа пользователя</td>  
             </tr>	
 			
 </table>
@@ -244,7 +244,17 @@
 
 <h3 align="left">Удалить продукт</h3>
 <p>Метод: DELETE</p>
-<p>Маршрут: http://[domainname:port]/products/{uuid пользователя} </p>
+<p>Маршрут: http://[domainname:port]/order/{uuid пользователя} </p>
+
+<table class="table1" cellpadding="8">
+           <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+				<tr>
+                 <td>1</td> <td>id</td> <td>Номер заказа пользователя</td>  
+            </tr>	
+			
+</table>
 <h3>Варианты ответов 204, 500, 400</h3> 
-\
+
 
