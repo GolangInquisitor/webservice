@@ -34,7 +34,34 @@
         </table>
 		
 		
-<p>Новый пользователь всегда создается не активным. Чтобы пользователь мог входить в сеть, надо его активировать после создания.</p>
+<h3>Ответ 200OK</h3>
+<table class="table1" cellpadding="8">
+            <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+			    <tr>
+                <td>1</td> <td>uuid</td> <td>uuid созданного пользователя </td> 
+            </tr>
+            <tr>
+                <td>2</td> <td>name</td> <td>Имя. </td> 
+            </tr>
+			 <tr>
+                <td>3</td> <td>surname</td> <td>Фамилия. </td>
+            </tr>
+			   <tr>
+                <td>4</td> <td>midlename</td> <td>Отчество. </td>
+            </tr>
+			    <tr>
+                <td>5</td> <td>fio</td> <td>surname+name+middlename</td> 
+            </tr>
+			   <tr>
+                <td>6</td> <td>gender</td> <td>Пол.</td>
+            </tr>
+			   <tr>
+                <td>7</td> <td>age</td> <td>Возраст </td>   
+        </table>
+
+
 <h3 align="left">Изменить пользователя</h3>
 <p>Метод: POST</p>
 <p>Маршрут: http://[domainname:port]/change </p>
