@@ -12,8 +12,8 @@ import (
 )
 
 const (
-	userRoute  = "/order/:uuid"
-	usersRoute = "/order/:uuid"
+	orderRoute = "/order/:uuid"
+	//ordersRoute  = "/orders/:uuid"
 )
 
 type handler struct {
@@ -26,9 +26,9 @@ func NewHandler(loger *loger.Logger, service order.Service) http2.Handler {
 }
 func (h *handler) Register(router *httprouter.Router) {
 	h.logger.Infoln("Registry routs")
-	router.Handle(http.MethodPost, userRoute, h.Create)
-	router.Handle(http.MethodPut, usersRoute, h.Update)
-	router.Handle(http.MethodDelete, usersRoute, h.Delete)
+	router.Handle(http.MethodPost, orderRoute, h.Create)
+	router.Handle(http.MethodPut, orderRoute, h.Update)
+	router.Handle(http.MethodDelete, orderRoute, h.Delete)
 
 }
 
