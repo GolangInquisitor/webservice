@@ -31,8 +31,7 @@
             </tr>
 			   <tr>
                 <td>5</td> <td>age</td> <td>Возраст </td> 
-				</tr>
-        </table>
+		    </table>
 		
 		
 <h3>Ответ 200OK</h3>
@@ -60,7 +59,7 @@
             </tr>
 			   <tr>
                 <td>7</td> <td>age</td> <td>Возраст </td> 
-			 </tr>	
+		
         </table>
 <h3>Другие варианты ответов 500, 400</h3>
 
@@ -88,7 +87,7 @@
             </tr>
 			   <tr>
                 <td>6</td> <td>age</td> <td>Возраст </td>  
-				</tr>
+			
         </table>
 <h3>204, 500, 400</h3>
 
@@ -118,7 +117,7 @@
             </tr>
 			   <tr>
                 <td>4</td> <td>left_in_stock</td> <td>Остаток на складе</td>
-            </tr>
+         
 				
         </table>
 		
