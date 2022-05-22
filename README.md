@@ -201,31 +201,47 @@
 			
 </table>
 <p>Заказ представялет собой совокупность ордеров. Может иметь несколько продуктов. Ордер представляют собой номер заказа к которому он относиться и может
-иметь только один продукт. Ордер нельзя изменить только создать и удалить. При возврате ответа важен порядок product и uuid? , так как i-й элемент из productt 
+иметь только один продукт. Ордер нельзя изменить только создать и удалить. При возврате ответа важен порядок product и uuid , так как i-й элемент из productt 
 соответсует i-му элемиенту uuid</p> 
  
 <h3>Другие варианты ответов 500, 400</h3>
-<h3 align="left"> Изменить продукт</h3>
+
+<h3 align="left"> Изменить заказ</h3>
 <p>Метод: PUT</p>
-<p>Маршрут: http://[domainname:port]/products/{uuid продукта} </p>
+<p>Маршрут: http://[domainname:port]/products/{uuid пользователя} </p>
 <table class="table1" cellpadding="8">
            <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
 			 <tr>
-                <td>1</td> <td>description</td> <td>Описание товара. </td> 
+                 <td>1</td> <td>product</td> <td>JSON массив из uuid продукта</td> 
+            </tr>
+			 <tr>
+                 <td>1</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
             </tr>
 			<tr>
-                <td>2</td> <td>price</td> <td>Цена товара. </td> 
-            </tr>
-			<tr>
-                <td>3</td> <td>currency</td> <td>Валюта </td> 
-            </tr>
-			<tr>
-                <td>4</td> <td>left_in_stock</td> <td>Остаток на складе. </td> 
-            </tr>
+                 <td>1</td> <td>id</td> <td>Номер заказа пользователя</td>  
+            </tr>		
 </table>
-<h3>Другие варианты ответов 204, 500, 400</h3>
+<h3>Ответ 200OK</h3>
+
+<table class="table1" cellpadding="8">
+           <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+			 <tr>
+                 <td>1</td> <td>product</td> <td>JSON массив из uuid продукта</td> 
+            </tr>
+			 <tr>
+                 <td>1</td> <td>uuid</td> <td>JSON массив из uuid ордеров</td>  
+            </tr>
+			<tr>
+                 <td>1</td> <td>id</td> <td>Номер заказа пользователя</td>  
+            </tr>	
+			
+</table>
+<h3>500, 400</h3>
+
 <h3 align="left">Удалить продукт</h3>
 <p>Метод: DELETE</p>
 <p>Маршрут: http://[domainname:port]/products/{uuid пользователя} </p>
