@@ -1,0 +1,10 @@
+
+is_debug: true
+listen:
+ port: ":8080"
+base:
+ basename: scoltest
+ login: postgres
+ pass:
+ host: localhost
+ port: "5432"
