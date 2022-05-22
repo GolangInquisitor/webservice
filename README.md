@@ -97,18 +97,7 @@
 <p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <h3>Варианты ответов 204, 500, 400</h3> 
 
- 
- <h3 align="left">Создать продукт(товар)</h3>
 
-<p>Метод: POST</p>
-<p>Маршрут: http://[domainname:port]/product</p>
-
-<table class="table1" cellpadding="8">
-            <tr class="table_font1">
-                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
-            </tr>
-  
-        </table>
 		
 
 <h3>Другие варианты ответов 500, 400</h3>
