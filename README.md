@@ -119,7 +119,7 @@
 			   <tr>
                 <td>4</td> <td>left_in_stock</td> <td>Остаток на складе</td>
          
-				
+		       <tr>
         </table>
 		
 
