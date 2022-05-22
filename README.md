@@ -108,21 +108,16 @@
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
 		    <tr>
-                <td>1</td> <td>name</td> <td>Имя. </td> 
+                <td>1</td> <td>description</td> <td>Описание товара(продукта)</td> 
             </tr>
 			 <tr>
-                <td>2</td> <td>surname</td> <td>Фамилия. </td>
+                <td>2</td> <td>price</td> <td>Цена товара</td>
             </tr>
 			   <tr>
-                <td>3</td> <td>midlename</td> <td>Отчество. </td>
+                <td>3</td> <td>currency</td> <td>Валюта</td>
             </tr>
 			    <tr>
-                <td>4</td> <td>fio</td> <td>surname+name+middlename</td> 
+                <td>4</td> <td>left_in_stock</td> <td>Остаток товара </td> 
             </tr>
-			   <tr>
-                <td>5</td> <td>gender</td> <td>Пол.</td>
-            </tr>
-			   <tr>
-                <td>6</td> <td>age</td> <td>Возраст </td>  
-			  </tr>
+	
         </table>
