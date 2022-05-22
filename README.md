@@ -96,11 +96,33 @@
 <p>Метод: DELETE</p>
 <p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <h3>Варианты ответов 204, 500, 400</h3> 
+<h3>Другие варианты ответов 500, 400</h3>
+
 
  <h3 align="left">Создать пользователя</h3>
 
 <p>Метод: POST</p>
 <p>Маршрут: http://[domainname:port]/user </p>
-		
-
-<h3>Другие варианты ответов 500, 400</h3>
+<table class="table1" cellpadding="8">
+           <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+		    <tr>
+                <td>1</td> <td>name</td> <td>Имя. </td> 
+            </tr>
+			 <tr>
+                <td>2</td> <td>surname</td> <td>Фамилия. </td>
+            </tr>
+			   <tr>
+                <td>3</td> <td>midlename</td> <td>Отчество. </td>
+            </tr>
+			    <tr>
+                <td>4</td> <td>fio</td> <td>surname+name+middlename</td> 
+            </tr>
+			   <tr>
+                <td>5</td> <td>gender</td> <td>Пол.</td>
+            </tr>
+			   <tr>
+                <td>6</td> <td>age</td> <td>Возраст </td>  
+			  </tr>
+        </table>
