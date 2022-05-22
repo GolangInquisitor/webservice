@@ -12,36 +12,28 @@
 
 <p>Метод: POST</p>
 <p>Маршрут: http://[domainname:port]/create </p>
+
 <table class="table1" cellpadding="8">
             <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
             <tr>
-                <td>1</td> <td>token</td> <td> Строка JWT токена полученного при аутентификации </td>
-            </tr>
-            <tr>
-                <td>2</td> <td>cmd_arg</td><td> user </td>
-            </tr>
-            <tr>
-                <td>3</td> <td>name</td> <td>Имя. </td> 
+                <td>1</td> <td>name</td> <td>Имя. </td> 
             </tr>
 			 <tr>
-                <td>4</td> <td>lname</td> <td>Фамилия. </td>
+                <td>2</td> <td>surname</td> <td>Фамилия. </td>
             </tr>
 			   <tr>
-                <td>5</td> <td>patr</td> <td>Отчество. </td>
+                <td>3</td> <td>midlename</td> <td>Отчество. </td>
             </tr>
 			   <tr>
-                <td>6</td> <td>post</td> <td>Должность в организации.</td>
+                <td>4</td> <td>gender</td> <td>Пол.</td>
             </tr>
 			   <tr>
-                <td>7</td> <td>log</td> <td>Логин </td>
-            </tr>
-			   <tr>
-                <td>8</td> <td>pass</td><td>Пароль</td>
-            </tr>
-			   
+                <td>5</td> <td>age</td> <td>Возраст </td>   
         </table>
+		
+		
 <p>Новый пользователь всегда создается не активным. Чтобы пользователь мог входить в сеть, надо его активировать после создания.</p>
 <h3 align="left">Изменить пользователя</h3>
 <p>Метод: POST</p>
