@@ -118,7 +118,7 @@
             </tr>
 			    <tr>
                 <td>4</td> <td>left_in_stock</td> <td>Остаток товара </td> 
-           
+            </tr>
 	
         </table>
 		
