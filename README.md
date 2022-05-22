@@ -11,7 +11,7 @@
  <h3 align="left">Создать пользователя</h3>
 
 <p>Метод: POST</p>
-<p>Маршрут: http://[domainname:port]/create </p>
+<p>Маршрут: http://[domainname:port]/user </p>
 
 <table class="table1" cellpadding="8">
             <tr class="table_font1">
@@ -60,48 +60,34 @@
 			   <tr>
                 <td>7</td> <td>age</td> <td>Возраст </td>   
         </table>
-
+<h3>Другие варианты ответов 500, 400</h3>
 
 <h3 align="left">Изменить пользователя</h3>
 <p>Метод: POST</p>
-<p>Маршрут: http://[domainname:port]/change </p>
+<p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <table class="table1" cellpadding="8">
-            <tr class="table_font1">
+           <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
-            <tr>
-                <td>1</td> <td>token</td> <td> Строка JWT токена полученного при аутентификации </td>
-            </tr>
-            <tr>
-                <td>2</td> <td>cmd_arg</td><td> user </td>
-            </tr>
-			<tr>
-                <td>3</td> <td>id</td> <td>[id пользователя].  Должен быть известен, менять нельзя</td> 
+		    <tr>
+                <td>1</td> <td>name</td> <td>Имя. </td> 
             </tr>
 			 <tr>
-                <td>3</td> <td>name</td> <td>Имя. Если менять не надо отравляем старое значение.</td> 
-            </tr>
-			 <tr>
-                <td>4</td> <td>lname</td> <td>Фамилия. Если менять не надо отравляем старое значение.</td>
+                <td>2</td> <td>surname</td> <td>Фамилия. </td>
             </tr>
 			   <tr>
-                <td>5</td> <td>patr</td> <td>Отчество. Если менять не надо отравляем старое значение.</td>
+                <td>3</td> <td>midlename</td> <td>Отчество. </td>
+            </tr>
+			    <tr>
+                <td>4</td> <td>fio</td> <td>surname+name+middlename</td> 
             </tr>
 			   <tr>
-                <td>6</td> <td>post</td> <td>Должность в организации.Если менять не надо отравляем старое значение.</td>
+                <td>5</td> <td>gender</td> <td>Пол.</td>
             </tr>
 			   <tr>
-                <td>7</td> <td>log</td> <td>Логин. Если менять не надо отравляем старое значение.</td>
-            </tr>
-			   <tr>
-                <td>8</td> <td>pass</td><td>Пароль. Если менять не надо отравляем старое значение.</td>
-            </tr>
-			<tr>
-                <td>3</td> <td>active</td> <td>либо "true" либо "false". Если менять не надо отравляем старое значение. </td> 
-            </tr>
-			   
+                <td>6</td> <td>age</td> <td>Возраст </td>   
         </table>
-
+<h3>204, 500, 400</h3>
 
 <h3 align="left">Удалить пользователя</h3>
 <p>Метод: POST</p>
