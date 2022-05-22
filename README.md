@@ -116,9 +116,31 @@
                 <td>2</td> <td>price</td> <td>Цена товара. </td> 
             </tr>
 			<tr>
-                <td>2</td> <td>currency</td> <td>Валюта </td> 
+                <td>3</td> <td>currency</td> <td>Валюта </td> 
             </tr>
 			<tr>
-                <td>2</td> <td>left_in_stock</td> <td>Остаток на складе. </td> 
+                <td>4</td> <td>left_in_stock</td> <td>Остаток на складе. </td> 
             </tr>
 </table>			
+<h3>Ответ 200OK</h3>
+
+<table class="table1" cellpadding="8">
+           <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+			 <tr>
+                <td>1</td> <td>uuid</td> <td>uuid созданного товара. </td> 
+            </tr>
+			 <tr>
+                <td>2</td> <td>description</td> <td>Описание товара. </td> 
+            </tr>
+			<tr>
+                <td>3</td> <td>price</td> <td>Цена товара. </td> 
+            </tr>
+			<tr>
+                <td>4</td> <td>currency</td> <td>Валюта </td> 
+            </tr>
+			<tr>
+                <td>5</td> <td>left_in_stock</td> <td>Остаток на складе. </td> 
+            </tr>
+</table>
