@@ -1,43 +1,97 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=windows-1251"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.3.2.2 (Windows)"/>
-	<meta name="created" content="2022-05-22T17:12:19.722000000"/>
-	<meta name="changed" content="2022-05-22T17:27:29.352000000"/>
-	<style type="text/css">
-		@page { size: 21cm 29.7cm; margin: 2cm }
-		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
-		a:link { color: #000080; so-language: zxx; text-decoration: underline }
-		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
-	</style>
-</head>
-<body lang="ru-RU" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
-<font face="Arial, sans-serif"><font size="4" style="font-size: 14pt"><b>��������
-��� ������</b></font></font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<h2>Test web service</h2>
+<p></p>
+<h2>Instruction</h2>
+<li> Install PostgreSQL</li>
+<li> psql  -U postgres -d <base> /scripts/postgres/scoltest.sql</li>
+<li> build project cmd\server_app.main.go</li>
+<li>place the file config.yml next to the executable file </li>
+<li> change the settings in config.yml if necessary</li>
+ <li> run
+ <h2>API</h2>
+ <h3 align="left">Создать пользователя</h3>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font size="3" style="font-size: 13pt"><b>����������</b></font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<p>Метод: POST</p>
+<p>Маршрут: http://[domainname:port]/create </p>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm">1. ��������
-PostgreSQL</p>
-<p style="line-height: 100%; margin-bottom: 0cm">2. ������� �������
-���� psql  -U postgres -d &lt;base&gt; /scripts/postgres/scoltest.sql</p>
-<p style="line-height: 100%; margin-bottom: 0cm">3. �������� ������
-cmd\server_app.main.go</p>
-<p style="line-height: 100%; margin-bottom: 0cm">4. ��������� 
-config.yml ����� � ����������� �����</p>
-<p style="line-height: 100%; margin-bottom: 0cm">5. ��� �������������
-������  ������ � ��������� ���������� � ����� ������ � config.yml</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<table class="table1" cellpadding="8">
+            <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+            <tr>
+                <td>1</td> <td>name</td> <td>Имя. </td> 
+            </tr>
+			 <tr>
+                <td>2</td> <td>surname</td> <td>Фамилия. </td>
+            </tr>
+			   <tr>
+                <td>3</td> <td>midlename</td> <td>Отчество. </td>
+            </tr>
+			   <tr>
+                <td>4</td> <td>gender</td> <td>Пол.</td>
+            </tr>
+			   <tr>
+                <td>5</td> <td>age</td> <td>Возраст </td>   
+        </table>
+		
+		
+<p>Новый пользователь всегда создается не активным. Чтобы пользователь мог входить в сеть, надо его активировать после создания.</p>
+<h3 align="left">Изменить пользователя</h3>
+<p>Метод: POST</p>
+<p>Маршрут: http://[domainname:port]/change </p>
+<table class="table1" cellpadding="8">
+            <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+            <tr>
+                <td>1</td> <td>token</td> <td> Строка JWT токена полученного при аутентификации </td>
+            </tr>
+            <tr>
+                <td>2</td> <td>cmd_arg</td><td> user </td>
+            </tr>
+			<tr>
+                <td>3</td> <td>id</td> <td>[id пользователя].  Должен быть известен, менять нельзя</td> 
+            </tr>
+			 <tr>
+                <td>3</td> <td>name</td> <td>Имя. Если менять не надо отравляем старое значение.</td> 
+            </tr>
+			 <tr>
+                <td>4</td> <td>lname</td> <td>Фамилия. Если менять не надо отравляем старое значение.</td>
+            </tr>
+			   <tr>
+                <td>5</td> <td>patr</td> <td>Отчество. Если менять не надо отравляем старое значение.</td>
+            </tr>
+			   <tr>
+                <td>6</td> <td>post</td> <td>Должность в организации.Если менять не надо отравляем старое значение.</td>
+            </tr>
+			   <tr>
+                <td>7</td> <td>log</td> <td>Логин. Если менять не надо отравляем старое значение.</td>
+            </tr>
+			   <tr>
+                <td>8</td> <td>pass</td><td>Пароль. Если менять не надо отравляем старое значение.</td>
+            </tr>
+			<tr>
+                <td>3</td> <td>active</td> <td>либо "true" либо "false". Если менять не надо отравляем старое значение. </td> 
+            </tr>
+			   
+        </table>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-</body>
-</html>
+<h3 align="left">Удалить пользователя</h3>
+<p>Метод: POST</p>
+<p>Маршрут: http://[domainname:port]/delete </p>
+<table class="table1" cellpadding="8">
+            <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+            <tr>
+                <td>1</td> <td>token</td> <td> Строка JWT токена полученного при аутентификации </td>
+            </tr>
+            <tr>
+                <td>2</td> <td>cmd_arg</td><td> user </td>
+            </tr>
+			<tr>
+                <td>3</td> <td>id</td> <td>[id пользователя].  Должен быть известен</td> 
+            </tr>		
+			   
+        </table>
+ 
