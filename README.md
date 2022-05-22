@@ -115,4 +115,10 @@
 			<tr>
                 <td>2</td> <td>price</td> <td>Цена товара. </td> 
             </tr>
+			<tr>
+                <td>2</td> <td>currency</td> <td>Валюта </td> 
+            </tr>
+			<tr>
+                <td>2</td> <td>left_in_stock</td> <td>Остаток на складе. </td> 
+            </tr>
 </table>			
