@@ -110,7 +110,9 @@
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
 			 <tr>
-                <td>1</td> <td>name</td> <td>Имя. </td> 
+                <td>1</td> <td>description</td> <td>Описание товара. </td> 
             </tr>
-			
+			<tr>
+                <td>2</td> <td>price</td> <td>Цена товара. </td> 
+            </tr>
 </table>			
