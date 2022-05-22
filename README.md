@@ -97,7 +97,7 @@
 <p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <h3>Варианты ответов 204, 500, 400</h3> 
 
- <h3 align="left">Создать продукт(товар)</h3>
+ <h3> align="left">Создать продукт(товар)</h3>
 
 <p>Метод: POST</p>
 <p>Маршрут: http://[domainname:port]/product</p>
