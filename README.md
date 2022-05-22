@@ -63,7 +63,7 @@
 <h3>Другие варианты ответов 500, 400</h3>
 
 <h3 align="left">Изменить пользователя</h3>
-<p>Метод: POST</p>
+<p>Метод: PUT</p>
 <p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
 <table class="table1" cellpadding="8">
            <tr class="table_font1">
@@ -90,21 +90,6 @@
 <h3>204, 500, 400</h3>
 
 <h3 align="left">Удалить пользователя</h3>
-<p>Метод: POST</p>
-<p>Маршрут: http://[domainname:port]/delete </p>
-<table class="table1" cellpadding="8">
-            <tr class="table_font1">
-                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
-            </tr>
-            <tr>
-                <td>1</td> <td>token</td> <td> Строка JWT токена полученного при аутентификации </td>
-            </tr>
-            <tr>
-                <td>2</td> <td>cmd_arg</td><td> user </td>
-            </tr>
-			<tr>
-                <td>3</td> <td>id</td> <td>[id пользователя].  Должен быть известен</td> 
-            </tr>		
-			   
-        </table>
- 
+<p>Метод: DELETE</p>
+<p>Маршрут: http://[domainname:port]/users/{uuid пользователя} </p>
+<h3>204, 500, 400</h3> 
