@@ -31,6 +31,7 @@
             </tr>
 			   <tr>
                 <td>5</td> <td>age</td> <td>Возраст </td> 
+				</tr>
 		    </table>
 		
 		
@@ -39,8 +40,8 @@
             <tr class="table_font1">
                 <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
             </tr>
-			    <tr>
-                <td>1</td> <td>uuid</td> <td>uuid созданного пользователя </td> 
+			<tr>
+			    <td>1</td> <td>uuid</td> <td>uuid созданного пользователя </td> 
             </tr>
             <tr>
                 <td>2</td> <td>name</td> <td>Имя. </td> 
