@@ -105,4 +105,8 @@
 <p>Метод: POST</p>
 <p>Маршрут: http://[domainname:port]/product</p>
 
-		
+<table class="table1" cellpadding="8">
+           <tr class="table_font1">
+                <td >№</td> <td>Наименование параметра</td> <td>Значение</td>
+            </tr>
+</table>			
